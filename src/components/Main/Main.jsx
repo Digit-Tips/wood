@@ -9,7 +9,7 @@ import american from '../../assets/8.png'
 import Soft from '../../assets/12.png'
 import PANELS from '../../assets/PANELS-3.png'
 import WOODPANELSEN from '../../assets/WOOD-PANELSEN.png'
-import Finished from '../FinishedPanels/Finished'
+import ImageGallery from '../FinishedPanels/Finished'
 
 
 
@@ -118,6 +118,7 @@ function Main() {
                 HardShow === true ? <div className='img'>
                     <img src={img} alt='1' useMap='#image-map' />
 
+
                     <map name="image-map">
                         <area alt="african" title="african" href="african" coords="100,440,300,300" shape="rect" onClick={(e) => {
                             e.preventDefault();
@@ -125,15 +126,15 @@ function Main() {
                             setEuropeanShow(false);
                             setMalaysianShow(false);
                             setrAmericanShow(false);
-                        }}
-
-                        ></area>
+                            setrHardShow(false);
+                        }}></area>
                         <area alt="european" title="european" href="european" coords="250,580,500,430" shape="rect" onClick={(e) => {
                             e.preventDefault();
                             setAfricanShow(false);
                             setEuropeanShow(true);
                             setMalaysianShow(false);
                             setrAmericanShow(false);
+                            setrHardShow(false);
                         }}></area>
                         <area alt="malaysian" title="malaysian" href="malaysian" coords="450,440,650,300" shape="rect" onClick={(e) => {
                             e.preventDefault();
@@ -141,6 +142,7 @@ function Main() {
                             setEuropeanShow(false);
                             setMalaysianShow(true);
                             setrAmericanShow(false);
+                            setrHardShow(false);
                         }}></area>
                         <area alt="american" title="american" href="american" coords="300,280,500,130" shape="rect" onClick={(e) => {
                             e.preventDefault();
@@ -148,6 +150,7 @@ function Main() {
                             setEuropeanShow(false);
                             setMalaysianShow(false);
                             setrAmericanShow(true);
+                            setrHardShow(false);
                         }}></area>
 
                     </map>
@@ -159,7 +162,7 @@ function Main() {
 
             }
             {
-                FinishedShow === true ? <Finished/> : ""
+                FinishedShow === true ? <ImageGallery /> : ""
 
             }
             {
@@ -171,19 +174,43 @@ function Main() {
 
             }
             {
-                africanShow === true ? <div className='img'> <img src={african} alt='1' /></div> : ""
+                africanShow === true ? <div className='img'> <img src={african} alt='1' /><Button variant="dark" onClick={(e) => {
+                    setrHardShow(true);
+                    setAfricanShow(false);
+                    setEuropeanShow(false);
+                    setMalaysianShow(false);
+                    setrAmericanShow(false);
+                }}>Back To Hard Wood</Button></div> : ""
 
             }
             {
-                europeanShow === true ? <div className='img'> <img src={european} alt='1' /></div> : ""
+                europeanShow === true ? <div className='img'> <img src={european} alt='1' /><Button variant="dark" onClick={(e) => {
+                    setrHardShow(true);
+                    setAfricanShow(false);
+                    setEuropeanShow(false);
+                    setMalaysianShow(false);
+                    setrAmericanShow(false);
+                }}>Back To Hard Wood</Button></div> : ""
 
             }
             {
-                malaysianShow === true ? <div className='img'> <img src={malaysian} alt='1' /></div> : ""
+                malaysianShow === true ? <div className='img'> <img src={malaysian} alt='1' /><Button variant="dark" onClick={(e) => {
+                    setrHardShow(true);
+                    setAfricanShow(false);
+                    setEuropeanShow(false);
+                    setMalaysianShow(false);
+                    setrAmericanShow(false);
+                }}>Back To Hard Wood</Button></div> : ""
 
             }
             {
-                americanShow === true ? <div className='img'> <img src={american} alt='1' /></div> : ""
+                americanShow === true ? <div className='img'> <img src={american} alt='1' /><Button variant="dark" onClick={(e) => {
+                    setrHardShow(true);
+                    setAfricanShow(false);
+                    setEuropeanShow(false);
+                    setMalaysianShow(false);
+                    setrAmericanShow(false);
+                }}>Back To Hard Wood</Button></div> : ""
 
             }
 

@@ -1,12 +1,23 @@
-/* .img img {
-    width: 45rem !important;
-    display: block;
-    align-items: center;
-    justify-content: center;
+.hoverImg img{
+    height: 10rem;
+    width: 12.8rem;
+    justify-content: flex-start;
+    display: flex;
+
 }
 
-.img h3 {
-    margin-left: 10rem !important;;
-    font-family: "Verdana", Sans-serif;
-    font-weight: bold;
+.hoverImg{
+    height: 10rem;
+    width: 40rem;
+    justify-content: flex-start;
+    display: flex;
+    margin-left: 3rem;
+
+}
+/* .uls{
+
+    width: 90rem;
+    height: 10rem;
+    justify-content: flex-start;
+    display: flex;
 } */
