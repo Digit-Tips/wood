@@ -20,7 +20,7 @@ function Image({ src, alt, details }) {
   function ImageGallery() {
     const images = [
       {
-        src:  document.querySelector('html').lang=='en'?'https://wood.digit-tips.com/wp-content/uploads/2022/09/1-img.png':'https://avatars.githubusercontent.com/u/95769942?v=4',
+        src:  document.querySelectorAll('html')[0].lang=='en'?'https://wood.digit-tips.com/wp-content/uploads/2022/09/1-img.png':'https://avatars.githubusercontent.com/u/95769942?v=4',
         alt: 'image 1',
         details: 'https://wood.digit-tips.com/wp-content/uploads/2022/09/2.png'
       },
