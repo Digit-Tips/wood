@@ -1,5 +1,5 @@
 .hoverImg img{
-    height: 10rem;
+    height: 30rem;
     width: 12.8rem;
     justify-content: flex-start;
     display: flex;
@@ -7,7 +7,7 @@
 }
 
 .hoverImg{
-    height: 10rem;
+    height: 30rem;
     width: 40rem;
     justify-content: flex-start;
     display: flex;
